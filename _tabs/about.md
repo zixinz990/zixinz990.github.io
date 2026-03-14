@@ -4,7 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Zixin Zhang is a third-year Ph.D. candidate in Mechanical Engineering at Northwestern University, advised by Prof. Todd Murphey. His research focuses on robotics.
 
-I am Zixin Zhang.
+Currently, Zixin is interning at Robotics and AI Institute (formerly Boston Dynamics AI Institute), where he is working on whole-body loco-manipulation for humanoid robots.
+
+Zixin Zhang's personal website is [here](https://sites.google.com/view/zixinatom990/home).
