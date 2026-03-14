@@ -2,7 +2,7 @@
 title: "I've Made Peace with Vibe Coding"
 date: 2026-03-14 18:14:00 -0400
 categories: [Blog]
-tags: []
+tags: [AI, Programming, Personal]
 ---
 
 ## Falling Back Down the Rabbit Hole
