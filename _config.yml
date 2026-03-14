@@ -141,9 +141,9 @@ assets:
     env: # [development | production]
 
 pwa:
-  enabled: true # The option for PWA feature (installable)
+  enabled: false # Disabled to allow normal page refresh without update popups
   cache:
-    enabled: false # Disabled to avoid stale content after deploys
+    enabled: false
     # Paths defined here will be excluded from the PWA cache.
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
