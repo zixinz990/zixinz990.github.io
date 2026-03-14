@@ -1,6 +1,6 @@
 ---
 title: "My First Post"
-date: 2026-03-14 17:30:00 -0500
+date: 2026-03-14 00:00:00 -0500
 categories: [Blog]
 tags: []
 ---
