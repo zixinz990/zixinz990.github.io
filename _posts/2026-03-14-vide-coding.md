@@ -7,9 +7,9 @@ tags: [AI, Programming, Personal]
 
 ## Falling Back Down the Rabbit Hole
 
-On New Year's Day, I reinstalled Cursor and finally bit the bullet on a paid subscription.
+On New Year's Day, I reinstalled Cursor and finally made up my mind to purchase the subscription.
 
-I'd actually used my .edu email to score a free trial last summer, but I was mostly just messing around with it then. The coding agents from early-to-mid last year just weren't powerful enough. The generated code was often bloated, it would completely mangle my codebase, and it couldn't quite nail down my actual requirements. I uninstalled it pretty quickly.
+I'd used my .edu email to score a free trial last summer, but I was just messing around with it then. The coding agents from early-to-mid last year just weren't powerful enough. The generated code was often bloated, it would completely mangle my codebase, and it couldn't quite nail down my actual requirements. I uninstalled it pretty quickly.
 
 Last spring, I used the ChatGPT Codex web interface to hack together a prototype for an iOS app. The results were decent, but Codex was painfully slow, and trying to configure a runtime environment for a codebase in a browser was a massive pain in the ass. So, I fell back into my old routine: hand-coding from scratch while keeping a web-based LLM open on the side for help.
 
@@ -31,7 +31,7 @@ In the "old-school" days of programming, when starting a large project, we'd spe
 
 But now? If all that matters is the final deliverable, 90% of that grunt work can be wiped out with a few prompts. You don't even need to fully understand the mechanics; the AI will magically handle it. This workflow decenters the human element, and it leaves me feeling hollow.
 
-Despite the fact that my mindset hasn't adapted as fast as these coding agents are evolving, I haven't dialed back my usage at all—because they are basically a hard drug engineered for developers.
+Despite the fact that my mindset hasn't adapted as fast as these coding agents are evolving, I didn't dial back my usage at all—because they are basically a hard drug made for developers.
 
 Even if you feel empty inside, even if your brain feels totally fried, you know that all you have to do is throw out a vague idea and the AI will quickly refine it, draft up a legit-looking plan, and crank out the code until it runs. If the old way of coding was about delayed gratification, using a coding agent is like shooting up. This addiction is slowly draining my energy. Since I started using them heavily, the actual number of hours I work every day has noticeably gone up.
 
