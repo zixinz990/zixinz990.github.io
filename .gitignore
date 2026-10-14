@@ -24,4 +24,6 @@ package-lock.json
 
 # Misc
 _sass/vendors
-assets/js/dist
+assets/js/dist/*
+# overrides the theme's service worker (see the file)
+!assets/js/dist/sw.min.js
