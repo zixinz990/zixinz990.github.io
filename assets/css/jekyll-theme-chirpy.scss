@@ -991,8 +991,16 @@ $profile-article: 'article:has(> .content > :is(.hero, .page-banner, .paper-head
   }
 }
 
+/* Chirpy's `height: 100%` stretches an embed to the whole project write-up on
+   the robotics page (a grid item), so it covers the text after it */
 .content .embed-video {
+  height: auto;
   border-radius: $radius;
+
+  /* Google Slides adds a toolbar under the 16:9 slide */
+  &.slides {
+    aspect-ratio: 960 / 569;
+  }
 }
 
 .content video.embed-video {

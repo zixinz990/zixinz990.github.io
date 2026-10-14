@@ -205,7 +205,7 @@ Later, I extended the method to a three-dimensional quadruped robot. I had a leg
 
 This work was presented in the course Optimal Control and Reinforcement Learning and was written up as a [6-page conference-style report](/assets/files/soft-landing-report.pdf).
 
-<iframe class="embed-video" src="https://docs.google.com/presentation/d/19grAifZhwE7iGiHNiayOFLaKw_7vgccpLozm5BJIRmM/embed" title="Soft Landing for Planar Quadruped Robots (slides)" loading="lazy" allowfullscreen></iframe>
+<iframe class="embed-video slides" src="https://docs.google.com/presentation/d/19grAifZhwE7iGiHNiayOFLaKw_7vgccpLozm5BJIRmM/embed" title="Soft Landing for Planar Quadruped Robots (slides)" loading="lazy" allowfullscreen></iframe>
 <p class="slides-caption"><a href="https://docs.google.com/presentation/d/19grAifZhwE7iGiHNiayOFLaKw_7vgccpLozm5BJIRmM/present">Soft Landing for Planar Quadruped Robots</a></p>
 
 </div>
@@ -225,7 +225,7 @@ This work was presented in the course Optimal Control and Reinforcement Learning
 
 In this project, we want to find the optimal solution to solve the problem of a robot going up stairs with a large load. Imagine if we can have a legged robot dragging a dolly, then why don't we put them together? So, we came up with the idea of a semi-wheeled-legged robot.
 
-<iframe class="embed-video" src="https://docs.google.com/presentation/d/1VYRFJaliy24yazkFLpqzsYp4J-RADKJRJYca4HnXuZg/embed" title="VeRT (slides)" loading="lazy" allowfullscreen></iframe>
+<iframe class="embed-video slides" src="https://docs.google.com/presentation/d/1VYRFJaliy24yazkFLpqzsYp4J-RADKJRJYca4HnXuZg/embed" title="VeRT (slides)" loading="lazy" allowfullscreen></iframe>
 <p class="slides-caption"><a href="https://docs.google.com/presentation/d/1VYRFJaliy24yazkFLpqzsYp4J-RADKJRJYca4HnXuZg/present">VeRT</a></p>
 
 </div>
