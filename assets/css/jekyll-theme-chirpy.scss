@@ -1,0 +1,215 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* --- Homepage hero & page banners --- */
+
+.hero,
+.page-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 7;
+  text-align: center;
+}
+
+.hero-name {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.35;
+  text-shadow: 0 2px 16px rgb(0 0 0 / 55%);
+}
+
+/* the hero already shows the name, so the page title is redundant on the homepage */
+article:has(.hero) > h1.dynamic-title {
+  display: none;
+}
+
+.page-banner {
+  aspect-ratio: 3 / 1;
+}
+
+/* --- Homepage --- */
+
+.profile-links {
+  font-size: 0.95rem;
+
+  a {
+    white-space: nowrap;
+  }
+
+  i {
+    margin-right: 0.25rem;
+  }
+}
+
+.bio {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+
+  .bio-photo {
+    flex: 0 0 32%;
+
+    a.img-link {
+      display: block;
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  .bio-text {
+    flex: 1 1 0;
+    min-width: 0;
+
+    > p:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    flex-direction: column;
+
+    .bio-photo {
+      flex: none;
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.publications > li {
+  margin-bottom: 0.75rem !important;
+}
+
+.pdf-embed,
+.map-embed {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  background: var(--img-bg);
+}
+
+.pdf-embed {
+  aspect-ratio: 8.5 / 11;
+  max-height: 85vh;
+}
+
+.map-embed {
+  aspect-ratio: 16 / 9;
+}
+
+/* --- Galleries --- */
+
+/* Images in a row share the same height: give each figure `style="--ar: <width / height>"` */
+.photo-row {
+  display: flex;
+  gap: 1rem;
+  margin: 1.25rem 0;
+
+  > figure {
+    flex: var(--ar, 1) 1 0;
+    min-width: 0;
+    margin: 0;
+  }
+
+  a.img-link {
+    display: block;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted-color);
+  }
+
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+
+    > figure {
+      flex: none;
+    }
+  }
+}
+
+/* side-by-side videos / slides */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+
+  .embed-video {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 575.98px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.content video.embed-video {
+  display: block;
+  width: 100%;
+  margin: 1.25rem auto;
+  background: #000;
+}
+
+.media-grid video.embed-video {
+  margin: 0;
+}
+
+.slides-caption {
+  margin-top: -0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* --- Project pages --- */
+
+.project-meta {
+  margin-top: -0.25rem;
+  color: var(--text-muted-color);
+  font-size: 0.95rem;
+}
+
+.paper-header {
+  text-align: center;
+
+  .affiliations {
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+  }
+}
