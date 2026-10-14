@@ -5,17 +5,16 @@ permalink: /robotics/icra-2025-robots-with-attitude/
 description: "Quaternion MPC: a model-predictive control framework for legged robots that avoids attitude singularities (ICRA 2025)."
 ---
 
-<div class="paper-header" markdown="1">
-
-[Zixin Zhang](/)<sup>1</sup>, [John Z. Zhang](https://johnzhang3.github.io/)<sup>2</sup>, [Shuo Yang](https://shuoyangrobotics.github.io/)<sup>3</sup>, and [Zachary Manchester](https://www.ri.cmu.edu/ri-faculty/zachary-manchester/)<sup>2</sup>
-
-<sup>1</sup>Center for Robotics and Biosystems, Northwestern University, <sup>2</sup>Robotics Institute, <sup>3</sup>Department of Mechanical Engineering, Carnegie Mellon University
-{: .affiliations }
-
-Paper Link: [https://arxiv.org/abs/2409.09940](https://arxiv.org/abs/2409.09940)  
-Codebase Link: [https://github.com/zixinz990/quaternion-mpc](https://github.com/zixinz990/quaternion-mpc)
-
-</div>
+<header class="paper-header">
+  <p class="kicker">ICRA 2025</p>
+  <h1 class="paper-title">Robots with Attitude: Singularity-Free Quaternion-Based Model-Predictive Control for Agile Legged Robots</h1>
+  <p class="paper-authors"><a href="/">Zixin Zhang</a><sup>1</sup>, <a href="https://johnzhang3.github.io/">John Z. Zhang</a><sup>2</sup>, <a href="https://shuoyangrobotics.github.io/">Shuo Yang</a><sup>3</sup>, and <a href="https://www.ri.cmu.edu/ri-faculty/zachary-manchester/">Zachary Manchester</a><sup>2</sup></p>
+  <p class="paper-affiliations"><sup>1</sup>Center for Robotics and Biosystems, Northwestern University, <sup>2</sup>Robotics Institute, <sup>3</sup>Department of Mechanical Engineering, Carnegie Mellon University</p>
+  <p class="paper-links">
+    <a class="zz-btn is-primary" href="https://arxiv.org/abs/2409.09940"><i class="fas fa-file-pdf"></i>Paper</a>
+    <a class="zz-btn" href="https://github.com/zixinz990/quaternion-mpc"><i class="fab fa-github"></i>Code</a>
+  </p>
+</header>
 
 {% include embed/youtube.html id='3fuNFZZx2LA' %}
 

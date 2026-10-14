@@ -3,7 +3,13 @@ icon: fas fa-music
 order: 2
 ---
 
-<div class="page-banner" style="background-image: url('/assets/img/piano/banner.jpg')" role="img" aria-label="Piano keys"></div>
+<header class="page-banner" style="--banner-img: url('/assets/img/piano/banner.jpg')">
+  <div class="page-banner-img" role="img" aria-label="Piano keys"></div>
+  <div class="page-banner-body">
+    <p class="kicker">Music</p>
+    <h1>Piano</h1>
+  </div>
+</header>
 
 ## My Story with Piano
 

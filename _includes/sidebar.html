@@ -1,10 +1,12 @@
 <!-- The Side Bar -->
 
 {% comment %}
-  Overrides jekyll-theme-chirpy v7.4.1:
+  Overrides jekyll-theme-chirpy v7.6.0:
   - HOME is the personal homepage (`/`), so it is active on that URL rather than on the `home` layout.
   - The blog post list (`blog/index.html`, layout `home`) is shown among the tabs, sorted by its `order`,
     and stays active on its paginated pages and on posts.
+  - A tab also stays active on the pages below it (e.g. the project pages under `/robotics/`).
+  - Categories, Tags and Archives are styled as sub-items of the blog (`nav-item-sub`).
   - The tagline (subtitle) belongs to the blog, so it is only shown on blog pages.
 {% endcomment %}
 
@@ -39,10 +41,12 @@
       <!-- the real tabs -->
       {% assign blog = site.pages | where: 'url', '/blog/' | first %}
       {% assign nav_tabs = site.tabs | push: blog | sort: 'order' %}
+      {% assign blog_subtabs = 'categories,tags,archives' | split: ',' %}
 
       {% for tab in nav_tabs %}
         {% assign active = false %}
-        {% if tab.url == page.url %}
+        {% assign url_head = page.url | slice: 0, tab.url.size %}
+        {% if url_head == tab.url %}
           {% assign active = true %}
         {% elsif tab.layout == 'home' %}
           {% if page.layout == 'home' or page.layout == 'post' %}
@@ -50,7 +54,7 @@
           {% endif %}
         {% endif %}
 
-        <li class="nav-item{% if active %}{{ " active" }}{% endif %}">
+        <li class="nav-item{% if blog_subtabs contains tab.layout %} nav-item-sub{% endif %}{% if active %}{{ " active" }}{% endif %}">
           <a href="{{ tab.url | relative_url }}" class="nav-link">
             <i class="fa-fw {{ tab.icon }}"></i>
             {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
@@ -63,11 +67,53 @@
     </ul>
   </nav>
 
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    {% unless site.theme_mode %}
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
+  <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
+    {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
+      {%- capture icon_system -%}
+        <i class="fa-solid fa-display" data-theme-mode="system"></i>
+      {%- endcapture -%}
+
+      {%- capture icon_light -%}
+        <i class="fa-regular fa-sun" data-theme-mode="light"></i>
+      {%- endcapture -%}
+
+      {%- capture icon_dark -%}
+        <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
+      {%- endcapture -%}
+
+      <div class="btn-group dropup">
+        <button
+          type="button"
+          class="btn btn-link nav-link"
+          aria-label="Switch Mode"
+          id="mode-toggle"
+          data-bs-toggle="dropdown"
+        >
+          {{- icon_light -}}
+          {{- icon_dark -}}
+          {{- icon_system -}}
+        </button>
+        <ul class="dropdown-menu rounded-3 mb-1 p-1">
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="light">
+              {{- icon_light -}}
+              {{- site.data.locales[lang].theme.light -}}
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="dark">
+              {{- icon_dark -}}
+              {{- site.data.locales[lang].theme.dark -}}
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="system">
+              {{- icon_system -}}
+              {{- site.data.locales[lang].theme.system -}}
+            </button>
+          </li>
+        </ul>
+      </div>
 
       {% if site.data.contact.size > 0 %}
         <span class="icon-border"></span>
@@ -91,7 +137,7 @@
           {%- endunless -%}
           {%- assign email = site.social.email | split: '@' -%}
           {%- capture url -%}
-            javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
+            javascript:void(location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@'))
           {%- endcapture -%}
         {% when 'rss' %}
           {% assign url = '/feed.xml' | relative_url %}

@@ -5,17 +5,16 @@ permalink: /robotics/corl-2025-recursive-koopman-learning/
 description: "Recursive Koopman Learning (RKL): a sample-efficient, lightweight, Koopman-based control policy learning pipeline (CoRL 2025)."
 ---
 
-<div class="paper-header" markdown="1">
-
-[Zixin Zhang](/)<sup>1</sup>, [James Avtges](https://javtges.github.io/)<sup>1</sup>, and [Todd D. Murphey](https://murpheylab.github.io/people/toddmurphey.html)<sup>1</sup>
-
-<sup>1</sup>Center for Robotics and Biosystems, Northwestern University
-{: .affiliations }
-
-Paper Link: [https://www.arxiv.org/abs/2509.08241](https://www.arxiv.org/abs/2509.08241)  
-Codebase Link: [https://github.com/zixinz990/recursive-koopman-learning](https://github.com/zixinz990/recursive-koopman-learning)
-
-</div>
+<header class="paper-header">
+  <p class="kicker">CoRL 2025</p>
+  <h1 class="paper-title">Recursive Koopman Learning: Sample-Efficient Online Control Policy Learning with Real-Time Recursive Model Updates</h1>
+  <p class="paper-authors"><a href="/">Zixin Zhang</a><sup>1</sup>, <a href="https://javtges.github.io/">James Avtges</a><sup>1</sup>, and <a href="https://murpheylab.github.io/people/toddmurphey.html">Todd D. Murphey</a><sup>1</sup></p>
+  <p class="paper-affiliations"><sup>1</sup>Center for Robotics and Biosystems, Northwestern University</p>
+  <p class="paper-links">
+    <a class="zz-btn is-primary" href="https://www.arxiv.org/abs/2509.08241"><i class="fas fa-file-pdf"></i>Paper</a>
+    <a class="zz-btn" href="https://github.com/zixinz990/recursive-koopman-learning"><i class="fab fa-github"></i>Code</a>
+  </p>
+</header>
 
 {% include embed/youtube.html id='KT7-qXiEwX8' %}
 

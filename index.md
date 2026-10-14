@@ -3,19 +3,23 @@ layout: page
 title: About Me
 ---
 
-<div class="hero" style="background-image: url('/assets/img/home/banner.jpg')" role="img" aria-label="A lightning storm over Lake Michigan and the Chicago skyline">
-  <p class="hero-name">张子昕<br>Zixin Zhang</p>
-</div>
+<header class="hero" style="--hero-img: url('/assets/img/home/banner.jpg')">
+  <div class="hero-img" role="img" aria-label="A lightning storm over Lake Michigan and the Chicago skyline"></div>
+  <div class="hero-body">
+    <p class="kicker">Ph.D. Candidate · Robotics · Northwestern University</p>
+    <h1 class="hero-name"><span class="hero-name-zh" lang="zh-CN">张子昕</span>Zixin Zhang</h1>
+    <p class="hero-lede">Sample-efficient robot learning and automated data collection, with a current focus on online reinforcement learning and physics-based computing.</p>
+    <nav class="hero-actions" aria-label="Profiles">
+      <a class="hero-btn is-primary" href="/assets/files/Zixin_Zhang_CV.pdf"><i class="fas fa-file-lines"></i>CV</a>
+      <a class="hero-btn" href="mailto:zixinzhang2027@u.northwestern.edu"><i class="fas fa-envelope"></i>Email</a>
+      <a class="hero-btn" href="https://scholar.google.com/citations?user=2OepJekAAAAJ&amp;hl=en"><i class="fa-brands fa-google-scholar"></i>Scholar</a>
+      <a class="hero-btn" href="https://github.com/zixinz990"><i class="fab fa-github"></i>GitHub</a>
+      <a class="hero-btn" href="https://www.linkedin.com/in/zixinz990/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+    </nav>
+  </div>
+</header>
 
 ## About Me
-
-<p class="profile-links">
-  <a href="mailto:zixinzhang2027@u.northwestern.edu"><i class="fas fa-envelope"></i>Email</a> |
-  <a href="https://scholar.google.com/citations?user=2OepJekAAAAJ&amp;hl=en"><i class="fas fa-graduation-cap"></i>Google Scholar</a> |
-  <a href="https://github.com/zixinz990"><i class="fab fa-github"></i>GitHub</a> |
-  <a href="https://www.linkedin.com/in/zixinz990/"><i class="fab fa-linkedin"></i>LinkedIn</a> |
-  <a href="/blog/"><i class="fas fa-pen-nib"></i>Blog</a>
-</p>
 
 <div class="bio">
 <div class="bio-photo">
@@ -34,21 +38,117 @@ Outside of school, I am a lover of [piano](/piano/), travel, skiing, and [photog
 </div>
 </div>
 
+<ol class="milestones" aria-label="Education and experience">
+  <li class="is-current">
+    <span class="milestone-when">2023 – Now</span>
+    <span class="milestone-what">Ph.D. in Mechanical Engineering</span>
+    <span class="milestone-where">Northwestern University</span>
+  </li>
+  <li>
+    <span class="milestone-when">Jan. – June 2026</span>
+    <span class="milestone-what">Ph.D. Research Intern, HALO Team</span>
+    <span class="milestone-where">Robotics and AI Institute</span>
+  </li>
+  <li>
+    <span class="milestone-when">2021 – 2023</span>
+    <span class="milestone-what">M.S. in Mechanical Engineering</span>
+    <span class="milestone-where">Carnegie Mellon University</span>
+  </li>
+  <li>
+    <span class="milestone-when">2017 – 2021</span>
+    <span class="milestone-what">B.Eng. in Robotics Engineering</span>
+    <span class="milestone-where">SUSTech</span>
+  </li>
+</ol>
+
 ## Publications
 
-- **Zixin Zhang**, James Avtges, Todd D. Murphey, **Sample-Efficient Online Control Policy Learning with Real-Time Recursive Model Updates** (CoRL 2025) [paper](https://proceedings.mlr.press/v305/zhang25d.html), [code](https://github.com/zixinz990/recursive-koopman-learning), [website](/robotics/corl-2025-recursive-koopman-learning/)
-- **Zixin Zhang**, John Z. Zhang, Shuo Yang, Zachary Manchester, **Robots with Attitude: Singularity-Free Quaternion-Based Model-Predictive Control for Agile Legged Robots** (ICRA 2025) [paper](https://ieeexplore.ieee.org/document/11128267/), [code](https://github.com/zixinz990/quaternion-mpc), [website](/robotics/icra-2025-robots-with-attitude/)
-- Shuo Yang, **Zixin Zhang**, Benjamin Bokser, Zachary Manchester, **Multi-IMU Proprioceptive Odometry for Legged Robots**, (IROS 2023, **Best Paper Award Finalist**) [paper](https://ieeexplore.ieee.org/document/10342061), [code](https://github.com/ShuoYangRobotics/Multi-IMU-Proprioceptive-Odometry)
-- Shuo Yang, **Zixin Zhang**, Zhengyu Fu, Zachary Manchester, **Cerberus: Low-Drift Visual-Inertial-Leg Odometry For Agile Locomotion**. (ICRA 2023) [paper](https://ieeexplore.ieee.org/document/10160486), [code](https://github.com/ShuoYangRobotics/Cerberus)
-{: .publications }
+<div class="pub-list">
+  <article class="pub">
+    <div class="pub-thumb"><a href="/robotics/corl-2025-recursive-koopman-learning/" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/corl-2025.jpg" alt="" width="560" height="373"></a></div>
+    <div class="pub-body">
+      <p class="pub-venue">CoRL 2025</p>
+      <h3 class="pub-title"><a class="pub-link" href="/robotics/corl-2025-recursive-koopman-learning/">Sample-Efficient Online Control Policy Learning with Real-Time Recursive Model Updates</a></h3>
+      <p class="pub-authors"><strong>Zixin Zhang</strong>, James Avtges, Todd D. Murphey</p>
+      <p class="pub-links">
+        <a class="zz-btn" href="https://proceedings.mlr.press/v305/zhang25d.html"><i class="fas fa-file-pdf"></i>Paper</a>
+        <a class="zz-btn" href="https://github.com/zixinz990/recursive-koopman-learning"><i class="fab fa-github"></i>Code</a>
+        <a class="zz-btn" href="/robotics/corl-2025-recursive-koopman-learning/"><i class="fas fa-globe"></i>Website</a>
+      </p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="pub-thumb"><a href="/robotics/icra-2025-robots-with-attitude/" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/icra-2025.jpg" alt="" width="720" height="480"></a></div>
+    <div class="pub-body">
+      <p class="pub-venue">ICRA 2025</p>
+      <h3 class="pub-title"><a class="pub-link" href="/robotics/icra-2025-robots-with-attitude/">Robots with Attitude: Singularity-Free Quaternion-Based Model-Predictive Control for Agile Legged Robots</a></h3>
+      <p class="pub-authors"><strong>Zixin Zhang</strong>, John Z. Zhang, Shuo Yang, Zachary Manchester</p>
+      <p class="pub-links">
+        <a class="zz-btn" href="https://ieeexplore.ieee.org/document/11128267/"><i class="fas fa-file-pdf"></i>Paper</a>
+        <a class="zz-btn" href="https://github.com/zixinz990/quaternion-mpc"><i class="fab fa-github"></i>Code</a>
+        <a class="zz-btn" href="/robotics/icra-2025-robots-with-attitude/"><i class="fas fa-globe"></i>Website</a>
+      </p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="pub-thumb"><a href="https://ieeexplore.ieee.org/document/10342061" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/iros-2023.jpg" alt="" width="720" height="480"></a></div>
+    <div class="pub-body">
+      <p class="pub-venue">IROS 2023 <span class="pub-award"><i class="fas fa-award"></i>Best Paper Award Finalist</span></p>
+      <h3 class="pub-title"><a class="pub-link" href="https://ieeexplore.ieee.org/document/10342061">Multi-IMU Proprioceptive Odometry for Legged Robots</a></h3>
+      <p class="pub-authors">Shuo Yang, <strong>Zixin Zhang</strong>, Benjamin Bokser, Zachary Manchester</p>
+      <p class="pub-links">
+        <a class="zz-btn" href="https://ieeexplore.ieee.org/document/10342061"><i class="fas fa-file-pdf"></i>Paper</a>
+        <a class="zz-btn" href="https://github.com/ShuoYangRobotics/Multi-IMU-Proprioceptive-Odometry"><i class="fab fa-github"></i>Code</a>
+      </p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="pub-thumb"><a href="https://ieeexplore.ieee.org/document/10160486" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/icra-2023.jpg" alt="" width="552" height="368"></a></div>
+    <div class="pub-body">
+      <p class="pub-venue">ICRA 2023</p>
+      <h3 class="pub-title"><a class="pub-link" href="https://ieeexplore.ieee.org/document/10160486">Cerberus: Low-Drift Visual-Inertial-Leg Odometry For Agile Locomotion</a></h3>
+      <p class="pub-authors">Shuo Yang, <strong>Zixin Zhang</strong>, Zhengyu Fu, Zachary Manchester</p>
+      <p class="pub-links">
+        <a class="zz-btn" href="https://ieeexplore.ieee.org/document/10160486"><i class="fas fa-file-pdf"></i>Paper</a>
+        <a class="zz-btn" href="https://github.com/ShuoYangRobotics/Cerberus"><i class="fab fa-github"></i>Code</a>
+      </p>
+    </div>
+  </article>
+</div>
+
+## Latest Posts
+
+<div class="post-rows">
+  {% for post in site.posts limit: 3 %}
+  <a class="post-row" href="{{ post.url | relative_url }}">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+    <span class="post-row-text">
+      <span class="post-row-title">{{ post.title }}</span>
+      <span class="post-row-summary">{% include post-summary.html max_length=180 %}</span>
+    </span>
+    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+  </a>
+  {% endfor %}
+</div>
+
+<p class="more-link"><a href="/blog/">All posts</a></p>
 
 ## CV
 
-<p><a href="/assets/files/Zixin_Zhang_CV.pdf"><i class="fas fa-file-pdf"></i> Zixin_Zhang_CV.pdf</a></p>
-
-<object class="pdf-embed" data="/assets/files/Zixin_Zhang_CV.pdf" type="application/pdf" aria-label="Zixin Zhang's CV">
-  <p>Your browser can't display the PDF here. <a href="/assets/files/Zixin_Zhang_CV.pdf">Download the CV</a> instead.</p>
-</object>
+<div class="cv-card">
+  <div class="cv-card-icon" aria-hidden="true"><i class="fas fa-file-lines"></i></div>
+  <div class="cv-card-text">
+    <h3>Curriculum Vitae</h3>
+    <p>Education, research experience, publications, open-source work, awards, service, and teaching.</p>
+  </div>
+  <div class="cv-card-actions">
+    <a class="zz-btn is-primary" href="/assets/files/Zixin_Zhang_CV.pdf"><i class="fas fa-file-pdf"></i>View PDF</a>
+    <a class="zz-btn" href="/assets/files/Zixin_Zhang_CV.pdf" download><i class="fas fa-download"></i>Download</a>
+  </div>
+</div>
 
 <div class="photo-row">
   <figure style="--ar: 1.508">

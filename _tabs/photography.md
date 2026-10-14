@@ -3,7 +3,15 @@ icon: fas fa-camera
 order: 3
 ---
 
-<div class="page-banner" style="background-image: url('/assets/img/photography/banner.jpg')" role="img" aria-label="The Chicago skyline over a frozen Lake Michigan at dusk"></div>
+<header class="page-banner" style="--banner-img: url('/assets/img/photography/banner.jpg')">
+  <div class="page-banner-img" role="img" aria-label="The Chicago skyline over a frozen Lake Michigan at dusk"></div>
+  <div class="page-banner-body">
+    <p class="kicker">Tibet · Sichuan · Kenya · Chicago</p>
+    <h1>Photography</h1>
+  </div>
+</header>
+
+<div class="gallery" markdown="0">
 
 <div class="photo-row">
   <figure style="--ar: 4.995">
@@ -66,4 +74,5 @@ order: 3
     <img src="/assets/img/photography/elephants-amboseli.jpg" alt="Elephants, Amboseli, Kenya" width="2048" height="1329">
     <figcaption>Elephants, Amboseli, Kenya</figcaption>
   </figure>
+</div>
 </div>
